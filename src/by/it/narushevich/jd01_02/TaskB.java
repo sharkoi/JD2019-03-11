@@ -68,7 +68,7 @@ public class TaskB {
     }
 
     private static void step3(double a, double b, double c) {
-        System.out.println("Квадратное уравнение: "+(int)a+"x²+"+(int)b+"x+"+(int)c+"=0");
+        System.out.println("Квадратное уравнение: " + (int) a + "x²+" + (int) b + "x+" + (int) c + "=0");
         double dis = b * b - 4 * a * c;
         if (dis < 0) System.out.println("корней нет");
         else if (dis == 0) {
