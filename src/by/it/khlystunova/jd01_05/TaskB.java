@@ -20,7 +20,7 @@ public class TaskB {
                 y = cos(x*x);
             }else if(x/2==0) {
                 y = cos(x * x) / sin(x * x);
-            }else y =0;
+            }else y = 0;
             result = log10(abs(y +2.74));
             System.out.printf("%-5.2f  %-3e",x/2,result);
             System.out.println();
