@@ -3,13 +3,15 @@ import static java.lang.Math.*;
 
 public class TaskB {
 	public static void main(String[] args) {
-		/*for (double a = 0; a <= 2; a += 0.2) {
+		for (double a = 0; a <= 2; a += 0.2) {
+			double y=0;
 			for (int x = 1; x <= 6; x++) {
-				y=
+				double z=pow(7,a)-cos(x);
+				y+=z;
 			}
 			System.out.printf("При a=%4.2f Сумма y=%g\n", a, y);
 		}
-		System.out.println();*/
+		System.out.println();
 
 
         double b;
