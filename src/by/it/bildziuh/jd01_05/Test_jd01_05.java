@@ -77,7 +77,7 @@ public class Test_jd01_05 {
     }
 
     @Test(timeout = 5000)
-    public void  ctestTaskC1__TaskC() throws Exception {
+    public void  testTaskC1__TaskC() throws Exception {
         System.out.println("Ожидается\n" +
                 "Массив A[]\n" +
                 "A[ 0 ] = 3,****8    A[ 1 ] = 3,**985    A[ 2 ] = 3,29494    A[ 3 ] = 3,33986    A[ 4 ] = 3,38461    \n" +
