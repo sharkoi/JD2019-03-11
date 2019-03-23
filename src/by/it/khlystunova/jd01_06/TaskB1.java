@@ -1,8 +1,6 @@
 package by.it.khlystunova.jd01_06;
 
 
-import javafx.beans.binding.StringBinding;
-
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -11,7 +9,6 @@ import java.util.regex.Pattern;
 начинающихся согласной и заканчивающихся гласной буквой
 (нужно сделать для проверки этого условия приватный метод без regex).*/
 public class TaskB1 {
-    String[]words = new String[100];
     public static void main(String[] args) {
         Pattern pattern = Pattern.compile("[а-яА-ЯёЁ]{2,}");//создали шаблон со ссылкой pattern
         Matcher matcher = pattern.matcher(Poem.text);//т.к у класса Matcher нет своего конструктора,создаем его через pattern.matcher(Последовательность символов для сопоставления).
@@ -19,8 +16,6 @@ public class TaskB1 {
            String word = matcher.group();//group возвращает всю посдедовательность(слово целиком) удв. шаблону.
             process(word);
         }
-
-
     }
     //самая тривиальная реализация
     private static void process(String word) {
