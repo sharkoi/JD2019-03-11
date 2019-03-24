@@ -20,11 +20,10 @@ public class TaskB1 {
         String sorted = word.toLowerCase();
 
         for (int i = 0; i < vowels.length; i++) {
-            if (sorted.charAt(0) != vowels[i]) {  //"Избушка" проходит проверку
-                if (sorted.charAt(sorted.length() - 1) == vowels[i])
-                    System.out.println(word);
+            if (sorted.charAt(0) != vowels[5] && sorted.charAt(sorted.length() - 1) == vowels[i])
+                System.out.println(word);
 
-            }
         }
     }
 }
+
