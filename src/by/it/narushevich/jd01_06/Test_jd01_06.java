@@ -1,14 +1,9 @@
-package by.it.akhmelev.jd01_06;
+package by.it.narushevich.jd01_06;
 
 
 import org.junit.Test;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.PrintStream;
-import java.io.StringWriter;
+import java.io.*;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.Random;
