@@ -23,6 +23,7 @@ public class TaskB2 {
 
             System.out.printf("%s",string);
 
+
         }
 
     }
