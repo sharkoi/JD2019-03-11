@@ -15,7 +15,6 @@ public class TaskA1 {
         Pattern word4 = Pattern.compile("[а-яА-ЯёЁ]{4,}");
         Matcher matcher = word4.matcher(sb);//создали объект matcher на основании шаблона word4 и передали ему наш объект StringBuilder.
         while(matcher.find()){//ищет последовательность символов, соответствующих шаблону word4, в любом месте строки.
-            String word  = matcher.group();//возвращает всю подпоследовательность, удовлетворяющую шаблону
             sb.setCharAt(matcher.start()+3,'#');//когда matcher нашел нужное нам слово(не меньше 4 символов),берем с начала слова 4 символ и меняем его на #
             if(matcher.group().length()>6)//если слово больше 7 символов, то заменяем 7 символ #.
             sb.setCharAt(matcher.start()+6,'#');
