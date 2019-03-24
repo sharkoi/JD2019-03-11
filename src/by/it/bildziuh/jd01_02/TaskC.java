@@ -46,7 +46,8 @@ public class TaskC {
         return matrix;
     }
 }
- /*   private static int step2(int[][] matrix) {
+/*
+    private static int step2(int[][] matrix) {
         int sumElem = 0;
         int counter1 = 0;
         int counter2 = 0;
@@ -54,19 +55,22 @@ public class TaskC {
             for (int j = 0; j < matrix.length; j++) {
                 if (matrix[i][j] > 0)
                     counter1 = j;
-                for (int k = counter1; k < matrix.length; k++) {
+                for (int k = j; k < matrix.length; k++) {
                     if (matrix[i][j] > 0)
                         counter2 = k;
                     for (int l = counter1; l <= counter2; l++) {
-                        sumElem += sumElem;
+                        sumElem += matrix[i][l];
                     }
                     break;
                 }
+
             }
         }
         return sumElem;
     }
+
     private static void step3() {
     }
+}
 */
 
