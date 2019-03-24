@@ -19,14 +19,20 @@ public class TaskC {
         int[][] matrix = new int[size][size];
         boolean a = false;
         boolean b = false;
-        while (a == false && b == false) {
+        while (a == false || b == false) {
             for (int i = 0; i < size; i++) {
                 for (int j = 0; j < size; j++) {
-                    matrix[i][j] = (int) (Math.random() * (size + size) + 1);
+                    double cFlip = Math.random();
+                    if (cFlip > 0.5)
+                        matrix[i][j] = (int) (Math.random() * (size + 1));
+                    else
+                        matrix[i][j] = -(int) (Math.random() * (size + 1));
+
                     if (matrix[i][j] == size)
                         a = true;
                     if (matrix[i][j] == -size)
                         b = true;
+
                 }
             }
         }
