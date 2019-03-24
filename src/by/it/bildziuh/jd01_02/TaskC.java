@@ -22,12 +22,7 @@ public class TaskC {
         while (a == false || b == false) {
             for (int i = 0; i < size; i++) {
                 for (int j = 0; j < size; j++) {
-                    double cFlip = Math.random();
-                    if (cFlip > 0.5)
-                        matrix[i][j] = (int) (Math.random() * (size + 1));
-                    else
-                        matrix[i][j] = -(int) (Math.random() * (size + 1));
-
+                    matrix[i][j] = (int) (Math.random() * ((size * 2) + 1)) - size;
                     if (matrix[i][j] == size)
                         a = true;
                     if (matrix[i][j] == -size)
