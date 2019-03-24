@@ -16,14 +16,14 @@ public class TaskB1 {
     }
 
     private static void compare(String word) {
-        char[] vowels = {'а', 'я', 'о', 'ё', 'ы', 'и', 'э', 'е', 'у', 'ю',
-                         'А', 'Я', 'О', 'Ё', 'Ы', 'И', 'Э', 'Е', 'У', 'Ю'};
+        char[] vowels = {'а', 'я', 'о', 'ё', 'ы', 'и', 'э', 'е', 'у', 'ю'};
+        String sorted = word.toLowerCase();
 
         for (int i = 0; i < vowels.length; i++) {
-            if (word.charAt(0) != vowels[i]) {
-                if (word.charAt(word.length() - 1) == vowels[i])
-
+            if (sorted.charAt(0) == vowels[i]) {  //"Изубшка" проходит проверку
+                if (sorted.charAt(sorted.length() - 1) != vowels[i])
                     System.out.println(word);
+
             }
         }
     }
